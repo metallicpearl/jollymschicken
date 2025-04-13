@@ -1,0 +1,46 @@
+.Egg {
+    position: absolute;
+    left: -3vw;
+    top: -4vw;
+    height: 8vw;
+    width: 8vw;
+    animation: eggDrop 0.5s forwards;
+}
+
+
+.Chick {
+    position: absolute;
+    left: -3vw;
+    top: -2vw;
+    height: 8vw;
+    width: 8vw;
+    animation: chickDanceL alternate-reverse 0.01s infinite, chickDanceR alternate-reverse 0.01s infinite;
+}
+
+.Chicken {
+    position: absolute;
+    left: -13vw;
+    top: -25vw;
+    height: 20vw;
+    width: 28vw;
+    animation: chickenHide 1s forwards;
+}
+
+@keyframes eggDrop {
+    from {margin-top: 0vw;}
+    to {margin-top: 2vw;}
+}
+
+@keyframes chickenHide {
+    from {opacity:1}
+    to {opacity: 0; display: none;}
+}
+
+@keyframes chickDanceL {
+    from {rotate: 0deg;}
+    to {rotate: 5deg;}
+}
+@keyframes chickDanceR {
+    from {rotate: 10deg;}
+    to {rotate: 5deg;}
+}

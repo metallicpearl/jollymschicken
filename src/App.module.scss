@@ -1,0 +1,54 @@
+@import './css-globals/globals.scss';
+
+
+.App {
+  background: rgb(98, 162, 222);
+  flex-direction: column;
+
+
+
+.Toolbar {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+
+  .ResetCountMusic {
+   
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    padding: 2vw;
+  }
+
+ 
+  .Title {
+    display: flex;
+    font-family: "Bradley MT", "Bradley", monospace;
+    color: black;
+    text-shadow: -0.3vw 0 yellow, 0 0.3vw yellow, 0.3vw 0 yellow, 0 -0.3vw yellow;
+    font-weight: 900;
+    font-size: 5vw;
+    align-items: center;
+    padding: 1vw 1vw 1vw 1vw;
+  }
+ 
+}
+.Content {
+  height: 100vh;
+  width: 100vw;
+  flex:auto;
+  cursor: crosshair;
+}
+
+.Footer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+ }
+
+
+}
+
